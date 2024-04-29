@@ -1,6 +1,6 @@
 const api_key = "10dce5db23cb4feab5c46f96a00a1f19";
-const api_url_english = "https://newsapi.org/v2/everything?q=tesla&from=2024-03-28&sortBy=publishedAt&apiKey=10dce5db23cb4feab5c46f96a00a1f19";
-const api_url_hindi = "https://newsapi.org/v2/everything?q=tesla&from=2024-03-28&sortBy=publishedAt&apiKey=651cd162b0c64cc38b495453d6a5d261";
+const api_url_english = "https://newsapi.org/v2/everything?q=tesla&from=2024-03-29&sortBy=publishedAt&apiKey=651cd162b0c64cc38b495453d6a5d261";
+const api_url_hindi = "https://newsapi.org/v2/everything?q=tesla&from=2024-03-29&sortBy=publishedAt&apiKey=651cd162b0c64cc38b495453d6a5d261";
 
 
 const englishNewsdata = () => {
@@ -106,6 +106,6 @@ function renderData(data) {
             count = 0;
         }
 
-        console.log(dataCollection.length);
+      
     });
 }

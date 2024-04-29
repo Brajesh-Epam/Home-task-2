@@ -1,2 +1,2 @@
-# Home-task-2
-Implementation practice of HTML5, CSS3 , JS and Git
+# Home-work-Task-1
+Home task 1

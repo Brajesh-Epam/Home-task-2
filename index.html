@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home task 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/constants.js" defer></script>
+    <script src="/script.js" defer></script>
+    <script src="/apiCall.js" defer></script>
+   
+</head>
+<script>
+    var heading = "News Blogs"
+</script>
+<body>
+    <div id="main-container">
+        <div id="header">
+            <div id="headingContent">
+                <span class="capitalText1"></span><br>
+                <span class="capitalText2"></span>
+            </div>
+            <div id="laungage-division">
+                <span class="selectLanguageText"></span>
+                <select class="language-select" onchange="languageChangeFunction(this.value)">
+                    <option value="" disabled selected>&lt; Select &gt;</option>
+                    <option value="hindi">हिंदी</option>  
+                    <option value="english">English</option>
+                </select>
+                
+               <!-- <button type="button" onclick="applyFilter()">Apply filter</button> -->
+            </div>
+        </div>
+
+        
+
+        <div class="subHeader">
+            <div class="categoryDiv" >
+                <span class="selectCategoryText"></span> <br>
+                <select class="categorySelect" onchange="categoryChange(this.value)">
+                    <option value="">All</option>
+                    <option value="ETF Daily News">ETF Daily News</option>
+                    <option value="Marketscreener.com">Marketscreener.com</option>
+                    <option value="Investing.com">Investing.com</option>
+                    <option value="Yahoo Entertainment">Yahoo Entertainment</option>
+                    <option value="Hibridosyelectricos.com">Hibridosyelectricos.com</option>
+                    <option value="entertainment">Phonandroid</option>
+                    <option value="CHIP Online Deutschland">CHIP Online Deutschland</option>
+                    
+                </select>
+            </div>
+            <div class="HeadingText">
+               
+            </div>
+            <div class="subscribeBox">
+                <span class="subscribe-text"></span>
+                <form method="get" class = "search-box-form">
+                    <input type="search" name="q" placeholder="Search...">
+                    <input type="submit" value="" class="subscribe-button">
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="Content">
+        <!-- content is being rendered by api and dynamically created using javascript in script.js file -->
+        </div>
+       
+    </div>
+</body>
+
+</html>
